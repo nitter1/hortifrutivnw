@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: #f66000;
+  width: 95%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body {
+  background-color: #f66000;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
-  flex-direction: column;
+  height: 120vh;
+}
+
+.horta {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  width: 70%;
+  height: 70vh;
+}
+
+.box {
+  display: flex;
+  width: 15vw;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.frutas {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -9rem;
+  top: 100px;
+  width: 30vw;
+  height: 60vh;
+  transition-duration: 1s;
+  transform-origin: 0% 0%;
+  cursor: pointer;
+}
+
+.frutas:hover {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -9rem;
+  top: 100px;
+  width: 35vw;
+  height: 65vh;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.rectangleTwo {
+  position: relative;
+  bottom: 555px;
+  left: 40px;
+  width: 95%;
+  object-fit: cover;
+}
+
+.rectangleThree {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 550px;
+  width: 95%;
+  object-fit: cover;
+}
+
+.minusCircle {
+  position: absolute;
+  top: 25px;
+  right: 115px;
+  transition-duration: 1s;
+  transform-origin: 0% 0%;
+}
+
+.minusCircle:hover {
+  position: absolute;
+  top: 25px;
+  right: 115px;
+  background-color: red;
+  border-radius: 2rem;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.plusCircle {
+  position: absolute;
+  top: 25px;
+  left: 115px;
+  transition-duration: 1s;
+  transform-origin: 0% 0%;
+}
+
+.plusCircle:hover {
+  position: absolute;
+  top: 25px;
+  left: 115px;
+  background-color: red;
+  border-radius: 2rem;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.carrinhoLogo {
+  position: relative;
+  bottom: 165px;
+  right: 200px;
+}
+
+.pCarrinho {
+  width: 30%;
+  text-align: center;
+  position: relative;
+  bottom: 165px;
+  left: 102px;
+}
+
+.siteLogo {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 96px;
+  padding-left: 4rem;
+  padding-top: 2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.subtitleLogo,
+.catalogo {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtitleLogo {
+  padding-left: 12rem;
+}
+
+.catalogo {
+  padding-top: 6rem;
+  padding-left: 2.5rem;
+}
+
+.carrinho {
+  position: relative;
+  bottom: 4rem;
+  left: 2rem;
 }
